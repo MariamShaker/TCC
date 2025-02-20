@@ -74,10 +74,10 @@
               <a href="#" class="link">Home</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">Service</a>
+              <a href="./pages/services/index.html" class="link">Service</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">tcc analytics</a>
+              <a href="./pages/analytics" class="link">tcc analytics</a>
             </li>
             <li class="list-item">
               <a href="#" class="link">Potential Calculator</a>
@@ -86,16 +86,16 @@
               <a href="#" class="link">Team</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">Clip</a>
+              <a href="./pages/services" class="link">Clip</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">TCC up to date</a>
+              <a href="./pages/uptodate" class="link">TCC up to date</a>
             </li>
             <li class="list-item">
               <a href="#" class="link">Advisory Board</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">Contact</a>
+              <a href="./pages/contact" class="link">Contact</a>
             </li>
           </ul>
           <div class="social-box"></div>
@@ -106,14 +106,14 @@
       document
         .getElementById("toggleSwitch")
         .addEventListener("click", function () {
-          let circle = document.querySelector(".circle");
+          let circle = document.querySelector(".circle"); // جلب العنصر الصحيح
 
           if (circle.style.left === "0px" || circle.style.left === "") {
-            circle.style.left = "auto";
-            circle.style.right = "0px";
+            circle.style.left = "auto"; // إزالة `left` عشان `right` يشتغل
+            circle.style.right = "0px"; // تحريك الدائرة لليمين
           } else {
-            circle.style.right = "auto";
-            circle.style.left = "0px";
+            circle.style.right = "auto"; // إزالة `right` عشان `left` يشتغل
+            circle.style.left = "0px"; // إرجاعها لليسار
           }
         });
     </script>
