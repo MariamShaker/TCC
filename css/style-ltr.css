@@ -18935,6 +18935,7 @@ readers do not read off random characters that represent icons */
 }
 .uptodate-details .article-section.dark {
   background-color: #2e4550;
+  direction: rtl;
 }
 .uptodate-details .article-section.dark .title {
   color: #fff;
