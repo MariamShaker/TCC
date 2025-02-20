@@ -1,0 +1,105 @@
+<!-- start header  -->
+<header class="mainHeader">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="../../../assets/images/logo.png"
+          alt=""
+          height="104"
+          width="345"
+          class="logo"
+      /></a>
+    </div>
+  </nav>
+  <div class="lang-box" id="toggleSwitch">
+    <p class="ms-2">EN</p>
+    <div class="checkbox">
+      <span class="circle"></span>
+    </div>
+    <p class="me-2">AR</p>
+  </div>
+
+  <button
+    class="btn burger-menu"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasLeft"
+    aria-controls="offcanvasLeft"
+  >
+    <img
+      src="../../../assets/images/burger-bar.png"
+      alt=""
+      width="32"
+      height="32"
+    />
+  </button>
+
+  <div
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    id="offcanvasLeft"
+    aria-labelledby="offcanvasLeftLabel"
+    style="z-index: 100000"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">
+        The future close at hand.
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list">
+        <li class="list-item">
+          <a href="#" class="link">Home</a>
+        </li>
+        <li class="list-item">
+          <a href="../../pages/services" class="link">Service</a>
+        </li>
+        <li class="list-item">
+          <a href="../../pages/analytics" class="link">tcc analytics</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Potential Calculator</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Team</a>
+        </li>
+        <li class="list-item">
+          <a href="../../pages/services" class="link">Clip</a>
+        </li>
+        <li class="list-item">
+          <a href="../../pages/uptodate" class="link">TCC up to date</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Advisory Board</a>
+        </li>
+        <li class="list-item">
+          <a href="../../pages/contact" class="link">Contact</a>
+        </li>
+      </ul>
+      <div class="social-box"></div>
+    </div>
+  </div>
+</header>
+<script>
+  document
+    .getElementById("toggleSwitch")
+    .addEventListener("click", function () {
+      let circle = document.querySelector(".circle"); // جلب العنصر الصحيح
+
+      if (circle.style.left === "0px" || circle.style.left === "") {
+        circle.style.left = "auto"; // إزالة `left` عشان `right` يشتغل
+        circle.style.right = "0px"; // تحريك الدائرة لليمين
+      } else {
+        circle.style.right = "auto"; // إزالة `right` عشان `left` يشتغل
+        circle.style.left = "0px"; // إرجاعها لليسار
+      }
+    });
+</script>
+<!-- end header  -->

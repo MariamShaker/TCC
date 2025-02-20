@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>الرئيسية</title>
+    <meta name="description" content="hghg" />
+    <link rel="stylesheet" href="../../css/style-rtl.css" />
+  </head>
+
+  <body>
+    <!-- start header  -->
+    <header class="mainHeader">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="../../assets/images/logo.png"
+              alt=""
+              height="104"
+              width="345"
+              class="logo"
+          /></a>
+        </div>
+      </nav>
+      <div class="lang-box" id="toggleSwitch">
+        <p class="ms-2">EN</p>
+        <div class="checkbox">
+          <span class="circle"></span>
+        </div>
+        <p class="me-2">AR</p>
+      </div>
+
+      <button
+        class="btn burger-menu"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasLeft"
+        aria-controls="offcanvasLeft"
+      >
+        <img
+          src="../../assets/images/burger-bar.png"
+          alt=""
+          width="32"
+          height="32"
+        />
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasLeft"
+        aria-labelledby="offcanvasLeftLabel"
+        style="z-index: 100000"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            The future close at hand.
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list">
+            <li class="list-item">
+              <a href="../../../index.html" class="link">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="../../pages/services/index.html" class="link">Service</a>
+            </li>
+            <li class="list-item">
+              <a href="../../pages/analytics/index.html" class="link"
+                >tcc analytics</a
+              >
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Potential Calculator</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Team</a>
+            </li>
+            <li class="list-item">
+              <a href="../../pages/services/index.html" class="link">Clip</a>
+            </li>
+            <li class="list-item">
+              <a href="../../pages/uptodate/index.html" class="link"
+                >TCC up to date</a
+              >
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Advisory Board</a>
+            </li>
+            <li class="list-item">
+              <a href="../../pages/contact/index.html" class="link">Contact</a>
+            </li>
+          </ul>
+          <div class="social-box"></div>
+        </div>
+      </div>
+    </header>
+    <script>
+      document
+        .getElementById("toggleSwitch")
+        .addEventListener("click", function () {
+          let circle = document.querySelector(".circle"); // جلب العنصر الصحيح
+
+          if (circle.style.left === "0px" || circle.style.left === "") {
+            circle.style.left = "auto"; // إزالة `left` عشان `right` يشتغل
+            circle.style.right = "0px"; // تحريك الدائرة لليمين
+          } else {
+            circle.style.right = "auto"; // إزالة `right` عشان `left` يشتغل
+            circle.style.left = "0px"; // إرجاعها لليسار
+          }
+        });
+    </script>
+    <!-- end header  -->
+
+    <div class="services">
+      <section class="hero">
+        <h1 class="title">كيف يحل TCC مشاكلك؟</h1>
+        <div class="content">
+          <div class="row width-full">
+            <div class="col-lg-3 col-md-6">
+              <div class="box no-line">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-06.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="box">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-07.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="box">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-08.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="box">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-05.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="width-full">
+          <iframe
+            class="videoImg width-full"
+            height="515"
+            src="https://www.youtube.com/embed/LXb3EKWsInQ?start=108"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="what-more">
+        <div class="content">
+          <h1 class="title">ماذا بعد؟</h1>
+          <div class="row width-full">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="box">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-09.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="box">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-10.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="box no-line">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-02.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="box">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-11.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="box">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-12.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="box no-line">
+                <div class="icon">
+                  <img
+                    src="../../assets/images/services/211125_TCC_Webseite_Elemente-13.png"
+                    alt=""
+                    width="50"
+                  />
+                </div>
+                <div class="content-title">زيادة الأمان للمرضى والموظفين</div>
+                <ul>
+                  <li>نحن ندعمك أنت ومرضاك باستمرار.</li>
+                  <li>
+                    دعم على مدار الساعة طوال أيام الأسبوع عبر خدمات التطبيب عن
+                    بُعد
+                  </li>
+                  <li>يمكننا إرشادك في أي وقت</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- start main footer  -->
+    <footer class="main-footer">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <img
+              src="../../assets/images/tcc_logo_small.png"
+              alt=""
+              width="250"
+              height="118"
+            />
+          </a>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-start list-unstyled d-flex">
+          <li class="ms-3 d-flex">
+            <a class="text-muted text-muted-first" href="#"> Data protection</a>
+            <a class="text-muted" href="#">Imprint </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><img
+                src="../../assets/images/facebook.png"
+                alt=""
+                width="30"
+                height="30"
+            /></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><img
+                src="../../assets/images/instagram.png"
+                alt=""
+                width="30"
+                height="30"
+            /></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><img
+                src="../../assets/images/mail.png"
+                alt=""
+                width="30"
+                height="30"
+            /></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><img
+                src="../../assets/images/social.png"
+                alt=""
+                width="30"
+                height="30"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </footer>
+    <!-- end  main footer  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
